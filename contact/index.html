@@ -15,22 +15,90 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Contact | Matias Agelvis">
 	<meta name="twitter:image" content="https://agelvie.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
-	<meta name="twitter:url" content="https://agelvie.github.io/code-2/index.html">
+	<meta name="twitter:url" content="https://agelvie.github.io/contact/index.html">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Matias Agelvis">
 	<meta property="og:title" content="Contact | Matias Agelvis">
 	<meta property="og:image" content="https://agelvie.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
-	<meta property="og:url" content="https://agelvie.github.io/code-2/index.html">
+	<meta property="og:url" content="https://agelvie.github.io/contact/index.html">
 		<title>Contact | Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated-5.css?rwcache=618102007" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=618117843" />
 		
 		
 		
 		
 		
+		<style type="text/css" media="all">/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+h3 {
+	text-align: center;
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 2px solid DodgerBlue;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	margin: 0 auto;
+	outline: 0;
+	background-color: DodgerBlue;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 0px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #bbbbbb;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}</style>
 		
-		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=618102007"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=618117843"></script>
 		
 		
 		
@@ -46,7 +114,7 @@
 	
 	<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
 		<div id="navcontainer"><!-- Start Navigation -->
-			<ul><li><a href="../" rel="">Home</a></li><li><a href="../markdown/" rel="">CV</a></li><li><a href="../code/" rel="">New Contact</a></li><li><a href="../markdown-2/" rel="">CV2</a></li><li><a href="../markdown-3/" rel="">CV3</a></li><li><a href="../blog/" rel="">Blog</a></li><li><a href="./" target="_blank" id="current">Contact</a></li></ul>
+			<ul><li><a href="../" rel="">Home</a></li><li><a href="../cv/" rel="">CV</a></li><li><a href="../blog/" rel="">Blog</a></li><li><a href="./" rel="" id="current">Contact</a></li></ul>
 		</div><!-- End navigation --> 
 		<div id="sidebar"><!-- Start sidebar content -->
 			<h1 class="sideHeader"></h1><!-- Sidebar header -->
@@ -57,8 +125,20 @@
 	
 	<div id="contentContainer"><!-- Start main content wrapper -->
 		<div id="content"><!-- Start content -->
-			<div style="text-align:center">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSX9H-UVYubtLQtr6jBdIsFVtBWKVPx4cSx2NLvXFMYwdHlg/viewform?embedded=true" width="640" height="901" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			<div class="container">
+	<h3>Contact</h3>
+	
+	<form action="https://formspree.io/xzbjognd" method="POST" >
+		<label for="email">Email</label>
+		<input name="email" type="email" required placeholder="you@domain.com"/>
+		<br>
+		<label for="message">Message</label><br>
+		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+		<div class="center">
+			<input type="submit" value="Submit">
+		</div>
+	</form>	
+
 </div>
 		</div><!-- End content -->
 	</div><!-- End main content wrapper -->
