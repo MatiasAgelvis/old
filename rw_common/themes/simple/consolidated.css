@@ -23,7 +23,7 @@
    	  bottom: 0px;
    	  width:100%;
    	  display: flex;
-   	  //right: auto;
+   	  right: auto;
    	  justify-content: center;
 	}
 }
