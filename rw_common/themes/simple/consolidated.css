@@ -28,7 +28,17 @@
 	}
 }
 
+#pageHeader h1 {
+	//margin-right: 100px;
+	padding-right: 100px;
+   line-height: 1;}
 
-body {
-        font: 0.9em/1.6em "lucida grande", verdana, tahoma, sans-serif;
-    }
+body
+{
+	font: 0.9em/1.6em "lucida grande", verdana, tahoma, sans-serif;
+}
+
+code 
+{
+	font-size: 1.2em;
+}

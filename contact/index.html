@@ -22,7 +22,7 @@
 	<meta property="og:image" content="https://agelvie.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://agelvie.github.io/contact/index.html">
 		<title>Contact | Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=618181585" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=618289913" />
 		
 		
 		
@@ -67,6 +67,7 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
 	border: 2px solid DodgerBlue;
 }
 
+
 /* Add styles to the submit button */
 input[type=submit] {
 	margin: 0 auto;
@@ -74,6 +75,7 @@ input[type=submit] {
 	background-color: DodgerBlue;
 	color: white;
 	border: 0;
+	font-size: 1em;
 	padding: 12px 24px;
 	border-radius: 2px;
 	transition: all ease-in-out 0.1s;
@@ -96,9 +98,40 @@ input[type=submit]:hover {
 /* Align items to center of the 'div' with the class 'center' */
 .center {
 	text-align: center;
-}</style>
+}
+
+
+
+
+/* Add styles to the submit button */
+button[type=submit] {
+	margin: 0 auto;
+	outline: 0;
+	background-color: DodgerBlue;
+	color: white;
+	border: 0;
+	font-size: 6em;
+	padding: 12px 20px;
+	border-radius: 2px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+button[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+button[type=submit]:hover {
+	background: #bbbbbb;
+}
+</style>
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=618181585"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=618289913"></script>
 		
 		
 		
@@ -107,7 +140,7 @@ input[type=submit]:hover {
 <div id="container"><!-- Start container -->
 	
 	<div id="pageHeader"><!-- Start page header -->
-		<img src="../rw_common/images/Logo wide stroke 100x100.png" width="100" height="100" alt="Matias Agelvis"/>
+		<img src="../rw_common/images/LogoWideStroke100x100.png" width="100" height="100" alt="Matias Agelvis"/>
 		<h1>Matias Agelvis</h1>
 		<h2></h2>
 	</div><!-- End page header -->
@@ -126,6 +159,9 @@ input[type=submit]:hover {
 	<div id="contentContainer"><!-- Start main content wrapper -->
 		<div id="content"><!-- Start content -->
 			<div class="container">
+   <!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<h3>If You Have Anything To Say To Me, Say It to My... Contact Form</h3>
 	
 	<form action="https://formspree.io/xzbjognd" method="POST" >
@@ -135,7 +171,13 @@ input[type=submit]:hover {
 		<label for="message">Message</label><br>
 		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
 		<div class="center">
-			<input type="submit" value="Submit">
+		   
+			<!-- <input type="submit" value="Submit"> -->
+			
+			<button type="submit">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i> &nbsp; Submit
+         </button>
+			
 		</div>
 	</form>	
 

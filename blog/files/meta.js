@@ -56,7 +56,7 @@
 	};
  
 	// Object containing all website meta info
-	var websiteMeta = {"2ef345aa038b859b4de9ecf9459a65fb-2.html":"<h1>Header<\/h1>\n<h2>Header 2<\/h2>\n<p>Just a test<\/p>\n<pre><code class='language-python' lang='python'># Some Code\nprint (&#39;HELLO WORLD&#39;)\n<\/code","archive-july-2020.html":"Archives for July 2020","archive-august-2020.html":"Archives for August 2020","bb8d6c428452e0608aa3f2ade6443763-0.html":"Test of the blog"};
+	var websiteMeta = {"2ef345aa038b859b4de9ecf9459a65fb-2.html":"comparing styled text with markdown","archive-july-2020.html":"Archives for July 2020","archive-august-2020.html":"Archives for August 2020","bb8d6c428452e0608aa3f2ade6443763-0.html":"Test of the blog"};
  
 	// pageId must match the key in websiteMeta object
 	var url = window.location.pathname;
