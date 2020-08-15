@@ -26,6 +26,23 @@
    	  right: auto;
    	  justify-content: center;
 	}
+	#sidebar{margin-left: 40px;}
+}
+
+@media only handheld
+{
+	font: 1.2em/2em
+	 
+	#sidebarContainer
+   {
+   	  position: absolute;
+   	  bottom: 0px;
+   	  width:100%;
+   	  display: flex;
+   	  right: auto;
+   	  justify-content: center;
+	}
+	.sidebar{font : 40px;}
 }
 
 #pageHeader h1 {
