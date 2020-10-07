@@ -104,14 +104,3 @@ code
         font-size: 0.9em/1.6em;
     }
 }
-
-body
-{
-	background-color: red;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
