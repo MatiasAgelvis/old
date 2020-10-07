@@ -62,35 +62,38 @@ code
 
 
 
-
-
-
-@media (max-width: 858px) {
+@media only screen and  (min-width: 623px) {
     html {
-        font-size: 0.9em/1.6em;
+        font-size: 0.9em/2em;
     }
 }
 
-@media (max-width: 780px) {
-    html {
-        font-size: 0.9em/1.7em;
-    }
-}
-
-@media (max-width: 702px) {
-    html {
-        font-size: 0.9em/1.8em;
-    }
-}
-
-@media (max-width: 724px) {
+@media only screen and  (min-width: 724px) {
     html {
         font-size: 0.9em/1.9em;
     }
 }
 
-@media (max-width: 623px) {
+@media only screen and (min-width: 702px) {
     html {
-        font-size: 0.9em/2em;
+        font-size: 0.9em/1.8em;
     }
 }
+
+@media only screen and (min-width: 780px) {
+    html {
+        font-size: 0.9em/1.7em;
+    }
+}
+
+
+@media only screen and (min-width: 858px) {
+    html {
+        font-size: 0.9em/1.6em;
+    }
+}
+
+
+
+
+
