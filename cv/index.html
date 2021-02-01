@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 		
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="CV of Matias Agelvis, Now with supporting Documents in Spanish and English" />
 		<meta name="robots" content="index, follow" />
@@ -26,7 +25,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/cv/index.html">
 		<title>CV of Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=630888729" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=633903821" />
 		
 		
 		
@@ -35,10 +34,9 @@
 		<style type="text/css" media="all">/* Style buttons */
 .btn {
   position: fixed;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   width: 160px;
-  margin-bottom: 7%;
   background-color: DodgerBlue;
   border: none;
   border-radius: 2px;
@@ -63,10 +61,51 @@ input[type=submit]:focus {
 /* Style 'hover' property */
 input[type=submit]:hover {
 	background: #2196F3;
-}</style>
+}
+
+
+
+#UpButton {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FF9800;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  bottom: -50px;
+  right: 0px;
+  z-index: 1000;
+  font-size: 1.8em;
+  color: #fff;
+  transition: bottom 1s;
+}
+
+#UpButton:hover {
+  cursor: pointer;
+  background-color: #999;
+}
+#UpButton:active {
+  background-color: #555;
+}
+</style>
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=630888729"></script>
-		
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=633903821"></script>
+		<script>
+			 function upButtonFade() {
+      var refButton = document.getElementById( 'UpButton' );
+      if (document.body.scrollTop > headerHeight || document.documentElement.scrollTop > headerHeight) {
+        document.getElementById("UpButton").style.bottom = "3px";
+      } else {
+        document.getElementById("UpButton").style.bottom = "-50px";
+      }
+    }
+
+// and then make each element do something on scroll
+window.addEventListener("scroll", upButtonFade, {passive: true}); 
+		</script>
 		
 		
 	</head>
@@ -152,6 +191,30 @@ input[type=submit]:hover {
 <h2 id="certificates">Certificates</h2>
 
 <dl>
+<dt><a href="https://www.coursera.org/account/accomplishments/certificate/FAEDCXFJ6LUX">Sample-based Learning Methods</a></dt>
+<dd>
+<ul>
+<li>Issuing authority: Coursera</li>
+<li>Issue Date: January 2021</li>
+<li>Credential ID: FAEDCXFJ6LUX</li>
+</ul></dd>
+
+<dt><a href="https://www.coursera.org/account/accomplishments/certificate/C35H6K5VMTJ7">Advanced Portfolio Construction and Analysis with Python</a></dt>
+<dd>
+<ul>
+<li>Issuing authority: Coursera</li>
+<li>Issue Date: January 2021</li>
+<li>Credential ID: C35H6K5VMTJ7</li>
+</ul></dd>
+
+<dt><a href="https://www.coursera.org/account/accomplishments/certificate/GS64XUR2HJYP">Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</a></dt>
+<dd>
+<ul>
+<li>Issuing authority: Coursera</li>
+<li>Issue Date: January 2021</li>
+<li>Credential ID: GS64XUR2HJYP</li>
+</ul></dd>
+
 <dt><a href="https://www.coursera.org/account/accomplishments/certificate/9GLNSVMU8WD6">Fundamentals of Reinforcement Learning</a></dt>
 <dd>
 <ul>
@@ -617,6 +680,16 @@ input[type=submit]:hover {
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
+<script src="../rw_common/assets/global.js?rwcache=633903821"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<div id="navbar">
+  <a href="/" rel="">Home</a>
+  <a href="/cv/" rel="">CV</a>
+  <a href="/blog/" rel="">Blog</a>
+  <a href="/contact/" rel="">Contact</a>
+</div>
+
 <!-- Add icon library 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 -->
@@ -644,5 +717,10 @@ alt="MatiasAgelvis_CV.pdf"
    <button type="submit">Download!</button>
 </form>
 
---></body>
+-->
+
+ <!-- Scroll to top button -->
+<a href="#top" id="UpButton" <i class="fas fa-arrow-up"></i></a>
+
+</body>
 </html>
