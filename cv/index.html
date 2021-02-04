@@ -28,7 +28,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/cv/index.html">
 		<title>CV of Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=634092359" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=634107309" />
 		
 		
 		
@@ -47,7 +47,7 @@
   padding: 12px 20px;
   cursor: pointer;
   font-size: 17px;
-  transition: all ease-in-out 0.1s;
+  transition: all 0.4s, background-color 0.3s;
 }
 
 /* Darker background on mouse-over */
@@ -72,7 +72,6 @@ input[type=submit]:hover {
   margin: 0 0;
 }
 
-
 #UpButton {
   display: inline-block;
   text-decoration: none;
@@ -88,7 +87,7 @@ input[type=submit]:hover {
   z-index: 1000;
   font-size: 1.8em;
   color: #fff;
-  transition: bottom 0.7s;
+  transition: all 0.4s, background-color 0.3s;
 }
 
 #UpButton:hover {
@@ -100,7 +99,7 @@ input[type=submit]:hover {
 }
 </style>
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=634092359"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=634107309"></script>
 		<script>
 			 function upButtonFade() {
       var refButton = document.getElementById( 'UpButton' );
@@ -112,7 +111,20 @@ input[type=submit]:hover {
     }
 
 // and then make each element do something on scroll
-window.addEventListener("scroll", upButtonFade, {passive: true}); 
+window.addEventListener("scroll", upButtonFade, {passive: true});
+
+
+function slideSocialButtons() {
+  if (Math.floor($(document).height() - $(document).scrollTop() - $(window).height()) > 40) {
+    document.getElementById("download").style.right = "0px";
+    
+document.getElementById("UpButton").style.width = "160px";
+  } else {
+    document.getElementById("download").style.right = "-80px"; document.getElementById("UpButton").style.width = "80px";
+  }
+}
+
+window.addEventListener("scroll", slideSocialButtons, {passive: true}); 
 		</script>
 		
 		
@@ -688,24 +700,25 @@ window.addEventListener("scroll", upButtonFade, {passive: true});
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
-<script src="../rw_common/assets/global.js?rwcache=634092359"></script>
+<script src="../rw_common/assets/global.js?rwcache=634107309"></script>
 <div id="navbar">
   <a href="/" rel="">Home</a>
   <a href="/cv/" rel="">CV</a>
   <a href="/blog/" rel="">Blog</a>
   <a href="/contact/" rel="">Contact</a>
+  <img id="navbarimg" src='../resources/Logo-wide-stroke-250x250White.png'>
 </div>
 
 <footer>
 <div class="footrow">
 
-<a href="https://stackoverflow.com/users/7666811/matias-agelvis" class="fa fa-stack-overflow"></a>
+<a href="https://stackoverflow.com/users/7666811/matias-agelvis" class="fa fa-stack-overflow footbut"></a>
 
 
-<a href="http://linkedin.com/in/matias-agelvis/" class="fa fa-linkedin"></a>
+<a href="http://linkedin.com/in/matias-agelvis/" class="fa fa-linkedin footbut"></a>
 
 
-<a href="http://github.com/matiasAgelvis" class="fa fa-github"></a>
+<a href="http://github.com/matiasAgelvis" class="fa fa-github footbut"></a>
 
 </div>
 </footer><!-- Add icon library 
@@ -714,7 +727,7 @@ window.addEventListener("scroll", upButtonFade, {passive: true});
 
 <!-- Auto width -->
 
-<button type="submit" onclick="window.open('../resources/MatiasAgelvis_CV.pdf')" class="btn"><i class="fas fa-file-download"></i> &nbsp; Download</button>
+<button type="submit" onclick="window.open('../resources/MatiasAgelvis_CV.pdf')" class="btn" id="download"><i id="pdf" class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp; Download</button>
 
 
 
