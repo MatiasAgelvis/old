@@ -33,7 +33,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/cv/index.html">
 		<title>CV of Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636159165" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636165109" />
 		
 		
 		
@@ -131,7 +131,7 @@ li{
     text-align: left;
      }</style>
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636159165"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636165109"></script>
 		<script>
 			 function upButtonFade() {
       var refButton = document.getElementById( 'UpButton' );
@@ -758,14 +758,20 @@ window.addEventListener("scroll", slideSocialButtons, {passive: true});
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
-<script src="../rw_common/assets/global.js?rwcache=636159165"></script>
+<script src="../rw_common/assets/global.js?rwcache=636165109"></script>
 <div id="navbar">
   <a href="/" rel="">Home</a>
   <a href="/code/" rel="">Beta</a>
   <a href="/cv/" rel="">CV</a>
   <a href="/blog/" rel="">Blog</a>
   <a href="/contact/" rel="">Contact</a>
-  <img id="navbarimg" src='../resources/Logo-wide-stroke-250x250White.png'>
+  <img id="navbarimg" src='/resources/Logo-wide-stroke-250x250White.png'>
+  
+
+  <!-- KEEP AT BOTTOM OF DIV, MUST BE AFTER ALL CONTENT, or the automatic height adjustment won't work -->
+  <script>
+    document.getElementById("navbar").style.top = "-"+$('#navbar').height()+"px";
+  </script>
 </div>
 
 <footer>
