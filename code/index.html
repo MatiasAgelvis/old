@@ -33,7 +33,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/code/index.html">
 		<title>Matias Agelvis - Home</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636168909" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636176623" />
 		
 		
 		
@@ -41,7 +41,7 @@
 		
 		
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636168909"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636176623"></script>
 		
 		
 		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -95,9 +95,8 @@
 	}
 	
 canvas {
-	//width: 100%;
-	height : 85vh;
-	width : 85vw;
+	width: 100%;
+	height : auto;
 	z-index : 2;
 	margin-left: auto;
     margin-right: auto;
@@ -316,17 +315,17 @@ Background.headparticle = function() {
 
 Background.headparticle();
 
-function particlesAdjust()
-{
-	console.log(window.innerHeight);
-	if (window.innerHeight > 20)
-	{
-		  $('canvas')[0].width = "85vw";
-  $('canvas')[0].height = "85vh";
-		}
-}
+// function particlesAdjust()
+// {
+// 	console.log(window.innerHeight);
+// 	if (window.innerHeight > 20)
+// 	{
+// 		  $('canvas')[0].width = "85vw";
+//        $('canvas')[0].height = "85vh";
+// 		}
+// }
 
-window.onresize = particlesAdjust();
+// window.onresize = particlesAdjust();
 
   </script>
 
@@ -345,7 +344,7 @@ window.onresize = particlesAdjust();
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
-<script src="../rw_common/assets/global.js?rwcache=636168909"></script>
+<script src="../rw_common/assets/global.js?rwcache=636176623"></script>
 <div id="navbar">
   <a href="/" rel="">Home</a>
   <a href="/code/" rel="">Beta</a>
