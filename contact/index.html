@@ -10,6 +10,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/40480/OBJLoader.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="You can tell me what you think, don't worry, I don't get offended easily. " />
 		<meta name="robots" content="index, follow" />
@@ -33,7 +35,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/contact/index.html">
 		<title>Contat Matias Agelvis</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636221293" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636222615" />
 		
 		
 		
@@ -152,7 +154,7 @@ button[type=submit]:hover {
 }
 </style>
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636221293"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636222615"></script>
 		
 		
 		
@@ -210,26 +212,70 @@ button[type=submit]:hover {
 	
 	<div id="footer"><!-- Start Footer -->
 		<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
-			
+			<ul><li><a href="../">Home</a>&nbsp;>&nbsp;</li><li><a href="./">Contact</a>&nbsp;>&nbsp;</li></ul>
 		</div><!-- End breadcrumb -->
 		<p></p>
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
-<script src="../rw_common/assets/global.js?rwcache=636221293"></script>
-<div id="navbar">
-  <a href="/" rel="">Home</a>
-  <a href="/cv/" rel="">CV</a>
-  <a href="/blog/" rel="">Blog</a>
-  <a href="/contact/" rel="">Contact</a>
-  <img id="navbarimg" src='/resources/Logo-wide-stroke-250x250White.png'>
-  
+<script src="../rw_common/assets/global.js?rwcache=636222615"></script>
+<section id="navbar" class="navbarigation">
+  <div class="navbar-container">
+    <div class="brand">
+      <a href="#!">Matias Agelvis</a>
+    </div>
+    <navbar>
+      <div class="navbar-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+      <ul class="navbar-list">
+        <li>
+          <a href="#!">Home</a>
+        </li>
+        <li>
+          <a href="#!">About</a>
+        </li>
+        <li>
+          <a href="#!">Services</a>
+          <ul class="navbar-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Pricing</a>
+        </li>
+        <li>
+          <a href="#!">Portfolio</a>
+          <ul class="navbar-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
+      </ul>
+    </navbar>
+  </div>
 
-  <!-- KEEP AT BOTTOM OF DIV, MUST BE AFTER ALL CONTENT, or the automatic height adjustment won't work -->
+
   <script>
-    document.getElementById("navbar").style.top = "-"+$('#navbar').height()+"px";
+    //document.getElementById("navbar").style.top = "-"+$('#navbar').height()+"px";
   </script>
-</div>
+</section>
 
 <footer>
 <div class="footrow">
