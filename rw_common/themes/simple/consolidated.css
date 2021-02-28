@@ -248,8 +248,16 @@ navbar ul li ul li a {
 .navbar-dropdown {
   position: absolute;
   display: none;
-  z-index: 1;
+  z-index: 4;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+navbar ul.navbar-dropdown li a {
+  //background-color: #FF9800;
+  background-color: #777;
+}
+navbar ul.navbar-dropdown li a:hover {
+  background-color: #FF9800;
 }
 
 /* Mobile navbarigation */
