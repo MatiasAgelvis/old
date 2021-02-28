@@ -33,7 +33,7 @@
 	<meta property="og:image" content="https://MatiasAgelvis.github.io/resources/photo-1595252129934-a5483ed6dea1.jpg">
 	<meta property="og:url" content="https://MatiasAgelvis.github.io/code/index.html">
 		<title>Matias Agelvis - Home</title>
-		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636176623" />
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simple/consolidated.css?rwcache=636204536" />
 		
 		
 		
@@ -41,7 +41,7 @@
 		
 		
 		
-		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636176623"></script>
+		<script type="text/javascript" src="../rw_common/themes/simple/javascript.js?rwcache=636204536"></script>
 		
 		
 		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -95,24 +95,22 @@
 	}
 	
 canvas {
-	width: 100%;
-	height : auto;
-	z-index : 2;
+	width: 100% !important;
+	height : 100%  !important;
 	margin-left: auto;
     margin-right: auto;
-	//position: absolute;
+	object-fit: scale-down;
 	}
 
 .head-message {
   //font-size: 1em;
   color: #343434;
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 50%;
-  //text-transform: uppercase;
+  padding-left: 3%;
+  padding-right: 10%;
   font-weight: normal;
-  //margin-left: -264px;
-  //margin-top: -20px;
   pointer-events: none;
   -webkit-hyphens: auto;
     -ms-hyphens: auto;
@@ -138,11 +136,10 @@ canvas {
       Made with three.js
 -->
 
-<div class="particlehead"></div>
+<div class="particlehead">
 <div class="head-message">
-<h1><strong>Matias Agelvis</strong> welcomes you to his  <em>awsome</em> website</h1>
+<h1><strong>Matias Agelvis</strong> welcomes you to his  <em>awesome</em> website</h1>
 
-<br />
 <br />
 <br />
 <br />
@@ -152,6 +149,10 @@ canvas {
 
 <h2 class="head-message">Look below for my social links and a cool bagde from Cousera</h2>
 </div>
+
+</div>
+
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
@@ -165,7 +166,6 @@ site.document = $(document);
 site.Width = site.window.width();
 site.Height = site.window.height();
 
-//window.onresize = function(){ location.reload(); }
 
 var Background = function() {
 
@@ -310,22 +310,22 @@ Background.headparticle = function() {
 
    Background.animate();
    
-   
+   fitToContainer(canvas);
 };
 
 Background.headparticle();
 
-// function particlesAdjust()
-// {
-// 	console.log(window.innerHeight);
-// 	if (window.innerHeight > 20)
-// 	{
-// 		  $('canvas')[0].width = "85vw";
-//        $('canvas')[0].height = "85vh";
-// 		}
-// }
+var canvas = document.querySelector('canvas');
 
-// window.onresize = particlesAdjust();
+function fitToContainer(canvas){
+  // Make it visually fill the positioned parent
+  canvas.style.width ='92%';
+  canvas.style.height='92%';
+  // ...then set the internal size to match
+  //canvas.width  = canvas.offsetWidth;
+  //canvas.height = canvas.offsetHeight;
+}
+
 
   </script>
 
@@ -344,7 +344,7 @@ Background.headparticle();
 	</div><!-- End Footer -->
 
 </div><!-- End container -->
-<script src="../rw_common/assets/global.js?rwcache=636176623"></script>
+<script src="../rw_common/assets/global.js?rwcache=636204536"></script>
 <div id="navbar">
   <a href="/" rel="">Home</a>
   <a href="/code/" rel="">Beta</a>
