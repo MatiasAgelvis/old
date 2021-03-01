@@ -172,14 +172,14 @@ code
 
 .brand {
   position: absolute;
-  padding-left: 15px;
+  padding-left: 10px;
   float: left;
   line-height: 70px;
   margin: 0px;
   left: 0px;
   //text-transform: uppercase;
-  font-size: 1.3em;
-  width: 35%;
+  font-size: 1.5vw;
+  width: 32%;
 }
 .brand a,
 .brand a:visited {
@@ -283,7 +283,7 @@ navbar ul.navbar-dropdown li a:hover {
   width: 70px;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 920px) {
   .navbar-mobile {
     display: block;
   }
@@ -291,7 +291,7 @@ navbar ul.navbar-dropdown li a:hover {
   width: 80%;
   padding-left: 2px;
   padding-right: 70px;
-  font-size: 0.8em;
+  font-size: 3vw;
   }
 
 
@@ -317,7 +317,7 @@ navbar ul.navbar-dropdown li a:hover {
     position: static;
   }
 }
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 921px) {
   .navbar-list {
     display: block !important;
   }
