@@ -161,19 +161,25 @@ code
   width: 100%; /* Full width */
   left: 0px;
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  
+  border-bottom-style: solid;
+  border-bottom-color: dodgerblue;
+  border-bottom-width: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 
 .brand {
   position: absolute;
-  padding-left: 20px;
+  padding-left: 15px;
   float: left;
   line-height: 70px;
   margin: 0px;
   left: 0px;
   //text-transform: uppercase;
-  font-size: 1.4em;
-  width: 30%;
+  font-size: 1.3em;
+  width: 35%;
 }
 .brand a,
 .brand a:visited {
@@ -203,6 +209,12 @@ code
 
 navbar {
   float: right;
+  
+  border-bottom-style: solid;
+  border-bottom-color: #FF9800;
+  border-bottom-width: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
 }
 navbar ul {
   list-style: none;
@@ -278,13 +290,14 @@ navbar ul.navbar-dropdown li a:hover {
   .brand {
   width: 80%;
   padding-left: 2px;
+  padding-right: 70px;
   font-size: 0.8em;
   }
 
 
   navbar {
     width: 100%;
-    padding: 70px 0 15px;
+    margin: 70px 0 15px;
   }
   navbar ul {
     display: none;
@@ -347,6 +360,7 @@ navbar ul.navbar-dropdown li a:hover {
 #navbar-toggle.active span:after {
   transform: rotate(-45deg);
 }
+
 
 article {
   max-width: 1000px;
