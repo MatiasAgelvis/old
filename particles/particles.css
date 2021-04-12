@@ -1,0 +1,35 @@
+.particlehead {
+  background: #fff;
+}
+   
+canvas {
+  /*width: 100%;*/
+  /*height: auto;*/
+   width: 63%; !important
+   height : 63%; !important
+   z-index : 2;
+   margin-left: auto;
+    margin-right: auto;
+   }
+
+.head-message {
+  color: #343434;
+  position: fixed;
+  left: 25%;
+  top: 45%;
+  font-weight: normal;
+  pointer-events: none;
+  -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-align: left;
+}
+
+.head-message strong {
+  font-weight: 700;
+}
+
+.head-message em {
+  text-transform: lowercase;
+  font-style: italic;
+}

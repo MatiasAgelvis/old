@@ -1,0 +1,121 @@
+/* Remove outline of all elements on focus */
+*:focus {
+    outline: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Add styles to 'container' class */
+.container {
+    /* padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	border-radius: 4px; */
+    padding: 0px 24px 12px 24px;
+    margin: 12px 12px;
+    border-radius: 4px;
+}
+
+#contentContainer
+{
+	margin-bottom: 50px;
+}
+
+/* Add styles to 'label' selector */
+label {
+    /* font-size: 0.85em; */
+    margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 2px solid DodgerBlue;
+}
+
+
+/* Add styles to the submit button */
+input[type=submit] {
+    margin: 0 auto;
+    outline: 0;
+    background-color: DodgerBlue;
+    color: white;
+    border: 0;
+    font-size: 1em;
+    padding: 12px 24px;
+    border-radius: 2px;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+    background: #A5D6A7;
+    color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+    background: #bbbbbb;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+/* Add styles to the submit button */
+button[type=submit] {
+    margin: 0 auto;
+    outline: 0;
+    background-color: DodgerBlue;
+    color: white;
+    border: 0;
+    font-size: 6em;
+    padding: 12px 20px;
+    border-radius: 2px;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+    button[type=submit] {
+        font-size: 3.5em;
+    }
+}
+
+/* Add styles for 'focus' property */
+button[type=submit]:focus {
+    background: #A5D6A7;
+    color: whitesmoke;
+}
+
+/* Style 'hover' property */
+button[type=submit]:hover {
+    background: #bbbbbb;
+}
