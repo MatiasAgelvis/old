@@ -103,6 +103,7 @@
     #navcontainer #current {
         background: no-repeat left center url(images/button_down.png);
         text-decoration: underline;
+        color: #3f89d4;
     }
 
     #navcontainer .currentAncestor {
@@ -132,7 +133,9 @@
     #navcontainer ul ul a {
         background: none;
         padding-left: 32px;
+        padding: 0;
         background-position: 16px 3px;
+        color: #3f89d4;
     }
 
     #navcontainer ul ul #current {
@@ -146,6 +149,7 @@
     #navcontainer ul ul ul a {
         padding-left: 46px;
         background-image: none;
+        color: #a9c5d4;
     }
 
     #navcontainer ul ul ul #current {
@@ -353,10 +357,8 @@
     .js-singleCommentBody,
     .js-singleCommentKarmaComMod,
     .js-commentBodyLabel,
-    .js-commentCmtTextarea,
     .js-commentAvatarArea,
     .js-OldCommentsWrap,
-    .js-OldComments,
     .js-CreateCommentFieldsWrap,
     .js-CreateCommentFields,
     .js-commentCmtTextarea,
@@ -443,18 +445,6 @@
     a:hover,
     a:active {
         text-decoration: none;
-    }
-
-    #navcontainer #current {
-        color: #3f89d4;
-    }
-
-    #navcontainer ul ul a {
-        color: #3f89d4;
-    }
-
-    #navcontainer ul ul ul a {
-        color: #a9c5d4;
     }
 
     #contentContainer {
@@ -611,10 +601,6 @@
         padding-left: 5px;
     }
 
-    #navcontainer ul ul a {
-        padding: 0;
-    }
-
     #navcontainer ul ul ul li {
         padding-left: 10px;
     }
@@ -711,7 +697,8 @@
     /*<group=Layout>*/
     #container {
         text-align: left;
-        width: 100%;
+        /*width: 100%;*/
+        width: auto;
         padding: 0;
         margin: 0;
     }
@@ -748,6 +735,8 @@
         float: none !important;
         padding: 0;
         margin-bottom: 10px;
+        margin-right: 230px;
+        margin-left: 0;
     }
 
     #contentContainer #content {
@@ -936,15 +925,6 @@
 
     #navcontainer ul ul ul a {
         color: #a9c5d4;
-    }
-
-    #container {
-        width: auto;
-    }
-
-    #contentContainer {
-        margin-right: 230px;
-        margin-left: 0;
     }
 }
 
