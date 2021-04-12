@@ -10,17 +10,6 @@
         padding: 0;
     }
 
-    p {}
-
-    b,
-    strong {}
-
-    a:link,
-    a:visited {}
-
-    a:hover,
-    a:active {}
-
     img {
         border: none;
     }
@@ -81,15 +70,11 @@
         margin-bottom: 10px;
     }
 
-    #contentContainer #content {}
-
     #sidebarContainer {
         width: 200px;
         float: right;
         margin-bottom: 10px;
     }
-
-    #sidebarContainer #sidebar {}
 
     #sidebarContainer .sideHeader {
         color: #000000;
@@ -97,16 +82,6 @@
         margin: 0;
         font-size: 1em;
     }
-
-    #footer {}
-
-    #footer p {}
-
-    #footer a:link,
-    #footer a:visited {}
-
-    #footer a:hover,
-    #footer a:active {}
 
     /* @end */
     /* @group Bread-crumb */
@@ -126,10 +101,6 @@
         display: inline;
     }
 
-    #breadcrumbcontainer a {}
-
-    #breadcrumbcontainer a:hover {}
-
     /* @end */
     /* @group Toolbar */
     /* Toolbar Styles */
@@ -144,8 +115,6 @@
         text-decoration: underline;
     }
 
-    #navcontainer #current:hover {}
-
     #navcontainer .currentAncestor {
         background: no-repeat left center url(images/button_down.png);
     }
@@ -156,8 +125,6 @@
         margin: 0;
         padding: 0;
     }
-
-    #navcontainer li {}
 
     #navcontainer a {
         background: no-repeat left center url(images/button_normal.png);
@@ -172,20 +139,11 @@
         color: #000000;
     }
 
-    #navcontainer a:active {}
-
-    /* Child - Level 1 */
-    #navcontainer ul ul {}
-
-    #navcontainer ul ul li {}
-
     #navcontainer ul ul a {
         background: none;
         padding-left: 32px;
         background-position: 16px 3px;
     }
-
-    #navcontainer ul ul a:hover {}
 
     #navcontainer ul ul #current {
         background: no-repeat 16px 3px url(images/button_down.png);
@@ -195,17 +153,10 @@
         background: no-repeat 16px 3px url(images/button_down.png);
     }
 
-    /* Child - Level 2 */
-    #navcontainer ul ul ul {}
-
-    #navcontainer ul ul ul li {}
-
     #navcontainer ul ul ul a {
         padding-left: 46px;
         background-image: none;
     }
-
-    #navcontainer ul ul ul a:hover {}
 
     #navcontainer ul ul ul #current {
         background-image: none;
@@ -214,33 +165,6 @@
     #navcontainer ul ul ul .currentAncestor {
         background-image: none;
     }
-
-    /* Child Level 3 */
-    #navcontainer ul ul ul {}
-
-    #navcontainer ul ul ul ul li {}
-
-    #navcontainer ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul a:hover {}
-
-    /* Child Level 4 */
-    #navcontainer ul ul ul ul {}
-
-    #navcontainer ul ul ul ul ul li {}
-
-    #navcontainer ul ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul ul a:hover {}
-
-    /* Child Level 5 */
-    #navcontainer ul ul ul ul ul {}
-
-    #navcontainer ul ul ul ul ul ul li {}
-
-    #navcontainer ul ul ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul ul ul a:hover {}
 
     /* @end */
     /* @group Global Classes */
@@ -251,21 +175,6 @@
         font-size: 1em;
         color: #b8b8b8;
     }
-
-    h1 {}
-
-    h2 {}
-
-    h3 {}
-
-    h4 {}
-
-    .imageStyle {}
-
-    /* Main content area unordered list styles */
-    #contentContainer #content ul {}
-
-    #contentContainer #content li {}
 
     ul.disc {
         list-style-type: disc;
@@ -304,8 +213,6 @@
         margin: 10px 0;
         padding: 0;
     }
-
-    #sidebarContainer #sidebar li {}
 
     /* Table Styles */
     table {
@@ -406,10 +313,6 @@
         font-size: 1.75em;
     }
 
-    /* @end */
-    /* @group Archive Page */
-    .blog-archive-background {}
-
     .blog-entry-summary {
         margin-bottom: 10px;
     }
@@ -420,19 +323,10 @@
         border-bottom: 1px solid #eaeaea;
     }
 
-    .blog-archive-entries-wrapper {}
-
-    .blog-archive-entries-wrapper .blog-entry {}
-
     .blog-archive-month {
         font-size: 1.6em;
         margin-bottom: 5px;
     }
-
-    .blog-archive-link {}
-
-    .blog-archive-link a:link,
-    .blog-archive-link a:visited {}
 
     /* @end */
     .blog-entry {
@@ -464,8 +358,6 @@
         padding-top: 10px;
         font-style: italic;
     }
-
-    .blog-entry-body {}
 
     .blog-entry-comments {
         margin-top: 10px;
@@ -500,18 +392,10 @@
         margin-bottom: 10px;
     }
 
-    .blog-archive-link-enabled {}
-
-    .blog-archive-link-disabled {}
-
     /* Styles the blog categories in the blog sidebar */
     #blog-categories {
         margin-bottom: 10px;
     }
-
-    .blog-category-link-enabled {}
-
-    .blog-category-link-disabled {}
 
     /* Styles the blog RSS feeds in the blog sidebar */
     #blog-rss-feeds {
@@ -542,8 +426,6 @@
     }
 
     /* @end */
-    /* @group File Sharing */
-    .filesharing-description {}
 
     .filesharing-item {
         margin-bottom: 15px;
@@ -553,12 +435,6 @@
         padding-left: 16px;
         background: no-repeat left center url(images/arrow_down.png);
     }
-
-    .filesharing-item-title a:hover {}
-
-    .filesharing-item-title a:visited {}
-
-    .filesharing-item-description {}
 
     /* @end */
     /* @group Photo Album */
@@ -592,12 +468,6 @@
         left: 0;
     }
 
-    .thumbnail-frame:hover {}
-
-    .thumbnail-frame a {}
-
-    .thumbnail-frame a:hover {}
-
     .thumbnail-frame img {
         padding: 1px;
         border-top: 1px solid #eaeaea;
@@ -616,10 +486,6 @@
         display: block;
     }
 
-    /* @end */
-    /* @group Single Page (Photo view) */
-    .photo-background {}
-
     .photo-navigation {
         margin-bottom: 35px;
     }
@@ -627,11 +493,6 @@
     .photo-links {
         margin: 0;
     }
-
-    .photo-navigation a:link,
-    .photo-navigation a:visited {}
-
-    .photo-navigation a:hover {}
 
     .photo-frame {
         padding: 1px;
@@ -649,133 +510,6 @@
     .photo-caption {
         margin: 5px 0 10px;
     }
-
-    /* @group EXIF data */
-    /* Data wrapper */
-    .exif-data {}
-
-    /* p tag classes for all exif data */
-    p.exif-version {}
-
-    p.exif-colour-space {}
-
-    p.exif-focal-length {}
-
-    p.exif-dimensions {}
-
-    p.exif-pixel-y-dimension {}
-
-    p.exif-pixel-x-dimension {}
-
-    p.exif-oecf-value {}
-
-    p.exif-subsec-time-original {}
-
-    p.exif-exposure-mode {}
-
-    p.exif-spatial-frequency-response {}
-
-    p.exif-scene-capture-type {}
-
-    p.exif-subject-location {}
-
-    p.exif-shutter-speed {}
-
-    p.exif-datetime-original {}
-
-    p.exif-subsec-time {}
-
-    p.exif-compressed-bits-per-pixel {}
-
-    p.exif-flash-energy {}
-
-    p.exif-saturation {}
-
-    p.exif-brightness {}
-
-    p.exif-exposure-time {}
-
-    p.exif-f-number {}
-
-    p.exif-file-source {}
-
-    p.exif-gain-control {}
-
-    p.exif-subject-area {}
-
-    p.exif-cfa-pattern {}
-
-    p.exif-scene-type {}
-
-    p.exif-white-balance {}
-
-    p.exif-flash {}
-
-    p.exif-exposure-index {}
-
-    p.exif-flashpix-version {}
-
-    p.exif-device-setting-description {}
-
-    p.exif-focalplane-x-resolution {}
-
-    p.exif-image-uniqueid {}
-
-    p.exif-components-configuration {}
-
-    p.exif-light-source {}
-
-    p.exif-sensing-method {}
-
-    p.exif-aperture {}
-
-    p.exif-sharpness {}
-
-    p.exif-exposure-program {}
-
-    p.exif-subject-distance {}
-
-    p.exif-subsec-time-digitized {}
-
-    p.exif-contrast {}
-
-    p.exif-focalplane-resolution-unit {}
-
-    p.exif-gamma {}
-
-    p.exif-35mm-focal-length {}
-
-    p.exif-datetime-digitized {}
-
-    p.exif-subject-distance-range {}
-
-    p.exif-custom-rendered {}
-
-    p.exif-max-aperture {}
-
-    p.exif-sound-file {}
-
-    p.exif-metering-mode {}
-
-    p.exif-spectral-sensitivity {}
-
-    p.exif-exposure-bias {}
-
-    p.exif-focalplane-y-resolution {}
-
-    p.exif-iso-rating {}
-
-    p.exif-maker-note {}
-
-    p.exif-digital-zoom-ratio {}
-
-    p.exif-user-comment {}
-
-    /* @end */
-    /* @end */
-    /* @end */
-    /* @group Quicktime Page */
-    .movie-description {}
 
     /* @end */
     /* @group Quicktime Album */
@@ -803,10 +537,6 @@
         border-bottom: 1px solid #b0b0b0;
     }
 
-    .movie-thumbnail-frame:hover {}
-
-    .movie-thumbnail-caption {}
-
     /* @end */
     /* @group Single Page (Movie View) */
     .movie-background {
@@ -824,18 +554,9 @@
         margin-bottom: 10px;
     }
 
-    /* @end */
-    /* @end */
-    /* @group Contact Form */
-    .message-text {}
-
-    .required-text {}
-
     .form-input-field {
         background: #f4f4f4;
     }
-
-    .form-input-button {}
 
     /* @end */
     /* @group JS-Kit Override */
@@ -986,11 +707,6 @@
         white-space: pre;
     }
 
-    p {}
-
-    b,
-    strong {}
-
     a:link {
         color: #0000ff;
         text-decoration: underline;
@@ -1010,10 +726,6 @@
     img {
         max-width: 99%;
     }
-
-    .image-left {}
-
-    .image-right {}
 
     /*</group>*/
     /*<group=Layout>*/
@@ -1091,14 +803,6 @@
         margin: 0;
     }
 
-    #footer p {}
-
-    #footer a:link,
-    #footer a:visited {}
-
-    #footer a:hover,
-    #footer a:active {}
-
     /*</group>*/
     /*<group=Bread-crumb>*/
     #breadcrumbcontainer {
@@ -1121,8 +825,6 @@
         padding: 0;
     }
 
-    #breadcrumbcontainer a:hover {}
-
     /*</group>*/
     /*<group=Toolbar>*/
     /* Toolbar Styles */
@@ -1131,12 +833,6 @@
         margin: 0 0 10px 0;
         padding: 0;
     }
-
-    #navcontainer #current {}
-
-    #navcontainer #current:hover {}
-
-    #navcontainer .currentAncestor {}
 
     /* Parent - Level 0 */
     #navcontainer ul {
@@ -1154,9 +850,6 @@
         padding: 0;
     }
 
-    #navcontainer a:hover {}
-
-    #navcontainer a:active {}
 
     /* Child - Level 1 */
     #navcontainer ul ul {
@@ -1174,51 +867,19 @@
         padding: 0;
     }
 
-    #navcontainer ul ul a:hover {}
-
-    #navcontainer ul ul #current {}
-
-    /* Child - Level 2 */
-    #navcontainer ul ul ul {}
-
     #navcontainer ul ul ul li {
         padding-left: 10px;
     }
 
-    #navcontainer ul ul ul a {}
-
-    #navcontainer ul ul ul a:hover {}
-
     /* Child Level 3 */
-    #navcontainer ul ul ul {}
-
     #navcontainer ul ul ul ul li {
         padding-left: 15px;
     }
 
-    #navcontainer ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul a:hover {}
-
     /* Child Level 4 */
-    #navcontainer ul ul ul ul {}
-
     #navcontainer ul ul ul ul ul li {
         padding-left: 20px;
     }
-
-    #navcontainer ul ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul ul a:hover {}
-
-    /* Child Level 5 */
-    #navcontainer ul ul ul ul ul {}
-
-    #navcontainer ul ul ul ul ul ul li {}
-
-    #navcontainer ul ul ul ul ul ul a {}
-
-    #navcontainer ul ul ul ul ul ul a:hover {}
 
     /*</group>*/
     /*<group=Global Classes>*/
@@ -1228,37 +889,6 @@
         padding: 5px;
         font-weight: bold;
     }
-
-    h1 {}
-
-    h2 {}
-
-    h3 {}
-
-    h4 {}
-
-    .imageStyle {}
-
-    /*</group>*/
-    /*<group=Blog>*/
-    /*<group=Archive Page>*/
-    .blog-archive-background {}
-
-    .blog-archive-headings-wrapper {}
-
-    .blog-archive-entries-wrapper {}
-
-    .blog-archive-entries-wrapper .blog-entry {}
-
-    .blog-archive-month {}
-
-    .blog-archive-link {}
-
-    .blog-archive-link a:link,
-    .blog-archive-link a:visited {}
-
-    /*</group>*/
-    .blog-entry {}
 
     .blog-entry-title {
         font-weight: bold;
@@ -1281,29 +911,12 @@
         display: none;
     }
 
-    .blog-entry-category {}
-
-    .blog-category-link-enabled {}
-
-    .blog-category-link-disabled {}
-
     /*</group>*/
-    /*<group=File Sharing>*/
-    .filesharing-description {}
-
     .filesharing-item {
         margin-bottom: 5px;
         padding-bottom: 5px;
         border-bottom: 1px solid #cccccc;
     }
-
-    .filesharing-item-title a:link {}
-
-    .filesharing-item-title a:hover {}
-
-    .filesharing-item-title a:visited {}
-
-    .filesharing-item-description {}
 
     /*</group>*/
     /*<group=Photo Album>*/
@@ -1329,42 +942,6 @@
         display: block;
     }
 
-    .thumbnail-frame {}
-
-    .thumbnail-frame:hover {}
-
-    .thumbnail-frame a {}
-
-    .thumbnail-frame a:hover {}
-
-    .thumbnail-frame img {}
-
-    .thumbnail-caption {}
-
-    /*</group>*/
-    /*<group=Single Page (Photo view)>*/
-    .photo-background {}
-
-    .photo-navigation {}
-
-    .photo-links {}
-
-    .photo-navigation a:link,
-    .photo-navigation a:visited {}
-
-    .photo-navigation a:hover {}
-
-    .photo-frame {}
-
-    .photo-title {}
-
-    .photo-caption {}
-
-    /*</group>*/
-    /*</group>*/
-    /*<group=Quicktime Page>*/
-    .movie-description {}
-
     /*</group>*/
     /*<group=Quicktime Album>*/
     /*<group=Index Page (Movie Thumbnail view)>*/
@@ -1379,32 +956,9 @@
         color: #808080;
     }
 
-    .movie-thumbnail-frame {}
-
-    .movie-thumbnail-frame:hover {}
-
-    .movie-thumbnail-caption {}
-
-    /*</group>*/
-    /*<group=Single Page (Movie View)>*/
-    .movie-background {}
-
-    .movie-title {}
-
-    .movie-frame {}
-
-    /*</group>*/
-    /*</group>*/
-    /*<group=Contact Form>*/
-    .message-text {}
-
-    .required-text {}
-
     .form-input-field {
         max-width: 100%;
     }
-
-    .form-input-button {}
 
     /*</group>*/
     .blog-entry-title a:hover,
@@ -1460,18 +1014,10 @@
         font: 10pt Georgia, Times New Roman, Times, serif;
     }
 
-    p {}
-
     b,
     strong {
         font-weight: bold;
     }
-
-    a:link,
-    a:visited {}
-
-    a:hover,
-    a:active {}
 
     /*</group>*/
     /*<group=Layout>*/
@@ -1520,8 +1066,6 @@
         padding: 0px;
     }
 
-    #contentContainer #content img {}
-
     #sidebarContainer {
         float: none;
         width: auto;
@@ -1529,8 +1073,6 @@
         margin-bottom: 10px;
         padding-bottom: 10px;
     }
-
-    #sidebarContainer .sidebar {}
 
     #footer {
         text-align: center;
@@ -1541,10 +1083,6 @@
         margin-top: 10px;
         padding-top: 10px;
     }
-
-    #footer a {}
-
-    #footer a:hover {}
 
     /*</group>*/
     /*<group=toolbar>*/
@@ -1601,8 +1139,6 @@
         margin-bottom: 3px;
     }
 
-    .imageStyle {}
-
     /*</group>*/
     /*<group=Blog>*/
     .blog-entry {
@@ -1636,8 +1172,6 @@
         border-bottom: 1px solid #d9d9d9;
     }
 
-    .filesharing-item {}
-
     .filesharing-item-title {
         font-size: 16pt;
         font-weight: bold;
@@ -1656,14 +1190,10 @@
         margin-bottom: 3px;
     }
 
-    .album-description {}
-
     .thumbnail-frame {
         margin: 0px;
         padding: 0px;
     }
-
-    .thumbnail-frame a {}
 
     .thumbnail-frame a:hover {
         height: 30px;
@@ -1697,8 +1227,6 @@
     .photo-navigation a:hover {
         display: none;
     }
-
-    .photo-frame {}
 
     .photo-links {
         display: none;
