@@ -25,7 +25,7 @@
   line-height: 70px;
   margin: 0px;
   left: 0px;
-  //text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 1.5vw;
   width: 32%;
 }
@@ -87,8 +87,8 @@ navbar ul li a:visited:hover {
   background: dodgerblue;
   color: #ffffff !important;
 
-  //background: #ddd;
-  //color: black;
+  /*background: #ddd;*/
+  /*color: black;*/
   
 }
 
@@ -113,7 +113,7 @@ navbar ul li ul li a {
 }
 
 navbar ul.navbar-dropdown li a {
-  //background-color: #FF9800;
+  /*background-color: #FF9800;*/
   background-color: #777;
 }
 navbar ul.navbar-dropdown li a:hover {
