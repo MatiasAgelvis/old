@@ -14,7 +14,7 @@ canvas {
 
 .head-message {
   color: #343434;
-  position: fixed;
+  position: absolute;
   left: 25%;
   top: 45%;
   font-weight: normal;
