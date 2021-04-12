@@ -19,7 +19,7 @@ Background.headparticle = function() {
       } catch(e) {
         return false;
       }
-   };
+   }
 
    if ( webgl_support() == false )
    {

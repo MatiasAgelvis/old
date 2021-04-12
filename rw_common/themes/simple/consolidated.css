@@ -27,7 +27,7 @@
     /* @end */
     /* @group Layout */
     #container {
-        margin: 0px auto;
+        margin: 0 auto;
         /* Right And Left Margin Widths To Auto */
         text-align: justify;
         /* Hack To Keep IE5 Windows Happy */
@@ -350,7 +350,7 @@
         color: #b3b3b3;
         margin-bottom: 15px;
         padding-left: 16px;
-        background: no-repeat 0px 3px url(images/date.png);
+        background: no-repeat 0 3px url(images/date.png);
     }
 
     .blog-read-more {
@@ -631,7 +631,7 @@
     }
 
     .rw-sitemap ul li {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px;
     }
 
     .rw-sitemap ul li:last-child {
@@ -639,7 +639,7 @@
     }
 
     .rw-sitemap ul li li {
-        margin: 0 0 5px 0;
+        margin: 0 0 5px;
     }
 
     .rw-sitemap ul li li:last-child {
@@ -690,8 +690,8 @@
     }
 
     #contentContainer {
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 
@@ -702,7 +702,7 @@
         text-align: left;
         font-family: Verdana, Arial, Helvetica, sans-serif;
         font-size: 0.9em;
-        margin: 0px;
+        margin: 0;
         padding: 0;
         white-space: pre;
     }
@@ -754,7 +754,7 @@
         color: #ffffff;
         font-size: 1.3em;
         margin: 0 0 5px;
-        padding-top: 0px;
+        padding-top: 0;
         font-weight: bold;
     }
 
@@ -766,7 +766,7 @@
     }
 
     #contentContainer {
-        margin: 0px;
+        margin: 0;
         display: block;
         width: auto;
     }
@@ -787,7 +787,7 @@
 
     #sidebarContainer #sidebar {
         margin: 0;
-        padding: 0px;
+        padding: 0;
     }
 
     #sidebarContainer .sideHeader {
@@ -799,7 +799,7 @@
     #footer {
         width: auto;
         text-align: left;
-        padding: 0px;
+        padding: 0;
         margin: 0;
     }
 
@@ -830,7 +830,7 @@
     /* Toolbar Styles */
     #navcontainer {
         color: #000000;
-        margin: 0 0 10px 0;
+        margin: 0 0 10px;
         padding: 0;
     }
 
@@ -996,7 +996,7 @@
 
     #contentContainer {
         margin-right: 230px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 
@@ -1005,12 +1005,12 @@
     /*<group=General Styles>*/
     body {
         background: transparent none;
-        margin: 0px 5% 0px 5%;
+        margin: 0 5%;
         text-align: left;
         color: #000000;
         letter-spacing: 0.5px;
         word-spacing: 1px;
-        padding: 0px;
+        padding: 0;
         font: 10pt Georgia, Times New Roman, Times, serif;
     }
 
@@ -1024,8 +1024,8 @@
     #container {
         text-align: left;
         width: 100%;
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
     }
 
     #pageHeader {
@@ -1042,28 +1042,28 @@
 
     #pageHeader h1 {
         color: #000000;
-        margin: 0px;
+        margin: 0;
         font-weight: bold;
         font-size: 16pt;
-        padding: 0px;
+        padding: 0;
     }
 
     #pageHeader h2 {
         color: #333333;
-        margin: 0px;
+        margin: 0;
         font-size: 13pt;
         font-weight: normal;
-        padding: 0px;
+        padding: 0;
     }
 
     #contentContainer {
         float: none !important;
-        padding: 0px;
+        padding: 0;
         margin-bottom: 10px;
     }
 
     #contentContainer #content {
-        padding: 0px;
+        padding: 0;
     }
 
     #sidebarContainer {
@@ -1191,8 +1191,8 @@
     }
 
     .thumbnail-frame {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     .thumbnail-frame a:hover {
@@ -1238,7 +1238,7 @@
 
     .photo-caption {
         font-size: 11pt;
-        margin: 0px;
+        margin: 0;
         text-align: center;
     }
 
@@ -1296,7 +1296,7 @@
 
     #contentContainer {
         margin-right: 230px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 
@@ -1363,7 +1363,7 @@ code {
 @media only handheld {
     font: 1.2em/2em #sidebarContainer {
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         width: 100%;
         display: flex;
         right: auto;
@@ -1388,7 +1388,7 @@ code {
 
     #sidebarContainer {
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         width: 100%;
         display: flex;
         right: auto;
