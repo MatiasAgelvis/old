@@ -840,7 +840,7 @@
     }
 
     .thumbnail-frame img {
-        background: repeat url(images/sidebar_bg.png);
+        background: repeat url(./images/sidebar_bg.png);
     }
 
     .thumbnail-caption {
