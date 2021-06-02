@@ -24,3 +24,27 @@ function slideSocialButtons()
 }
 
 window.addEventListener("scroll", slideSocialButtons, {passive: true});
+
+
+$( '.toggle' ).on( "click", function() {
+  console.log( $( this ).text() );
+});
+
+
+$('.toggle').click(function(e) {
+    e.preventDefault();
+
+    console.log('HI');
+  
+    var $this = $(this);
+  
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});

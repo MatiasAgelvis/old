@@ -97,24 +97,24 @@ ul li {
 
 .certificates {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   font-weight: 300;
 }
 
-.certificates a {
+.certificates ~ a {
   text-decoration: none;
   color: inherit;
 }
 
-.certificates p {
+.certificates ~ p {
   font-size: 1.1em;
   margin: 1em 0;
 }
-.certificates .description {
+.certificates ~ .description {
   margin: 1em auto 2.25em;
 }
 
-.certificates body {
+.certificates ~ body {
   width: 40%;
   min-width: 300px;
   max-width: 400px;
@@ -122,41 +122,78 @@ ul li {
   color: #333;
 }
 
-.certificates h1 {
+.certificates ~ h1 {
   /*font-family: 'Pacifico', cursive;*/
   font-weight: 400;
   font-size: 2.5em;
 }
 
-.certificates ul {
+.certificates ~ ul {
   list-style: none;
   padding: 0;
 }
 
-.certificates ul .inner {
+.certificates ~ ul .inner {
   padding-left: 1em;
+  list-style: none;
   overflow: hidden;
   display: none;
 }
 
-.certificates ul .inner.show {
+.certificates ~ ul .inner.show {
+  list-style: none;
   /*display: block;*/
 }
 
-.certificates ul li {
-  margin: 0.5em 0;
+.certificates ~ ul li {
+  text-align: left;
+  margin: 0.5em 0.5em;
 }
 
-.certificates ul li a.toggle {
-  width: 100%;
+.certificates ~ ul li a.toggle {
+  width: 75%;
   display: block;
   background: rgba(0, 0, 0, 0.78);
   color: #fefefe;
   padding: 0.75em;
+  margin: 0.5em 0 0 0;
   border-radius: 0.15em;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
-.certificates ul li a.toggle:hover {
+.certificates ~ ul li a.toggle:hover {
   background: rgba(0, 0, 0, 0.9);
+}
+
+.certificates ~ ul li a.toggle.course {
+    background: white;
+    color: black;
+    border: 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.15em;
+}
+
+.course-data{
+    border-width: 2px;
+    border-style: solid;
+    width: 75%;
+    list-style: none;
+    border-bottom-left-radius: 0.15em;
+    border-bottom-right-radius: 0.15em;
+}
+
+a.course-ID{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+.specialization
+{
+    margin: 0.5em 0 0 0;
 }
