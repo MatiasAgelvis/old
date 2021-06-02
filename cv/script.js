@@ -48,3 +48,15 @@ $('.toggle').click(function(e) {
         $this.next().slideToggle(350);
     }
 });
+
+
+
+function myFunction() {
+   var mainFrameOne = document.getElementById("categorical"); 
+   var mainFrameTwo = document.getElementById("chronological");
+
+   mainFrameOne.style.display = (
+       mainFrameOne.style.display == "none" ? "block" : "none"); 
+   mainFrameTwo.style.display = (
+       mainFrameTwo.style.display == "none" ? "block" : "none"); 
+}
